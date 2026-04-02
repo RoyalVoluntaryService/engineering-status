@@ -1,0 +1,313 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>platform-api-srv PR state</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+  </head>
+  <body class="min-h-screen bg-slate-950 text-slate-900 antialiased">
+    <div class="absolute inset-0 -z-10 bg-[radial-gradient(circle_at_top_left,_rgba(56,189,248,0.14),_transparent_28%),radial-gradient(circle_at_top_right,_rgba(251,191,36,0.12),_transparent_22%),linear-gradient(180deg,_#020617,_#0f172a_55%,_#111827)]"></div>
+    <main class="mx-auto max-w-7xl px-4 py-10 sm:px-6 lg:px-8">
+      
+    <nav class="mb-8 rounded-3xl border border-white/10 bg-white/95 p-4 shadow-2xl shadow-slate-950/20 backdrop-blur">
+      <div class="flex flex-wrap items-center gap-2">
+        
+    <a href="../index.html" class="inline-flex items-center gap-2 rounded-full px-3 py-2 text-sm font-semibold transition text-slate-600 hover:bg-slate-100 hover:text-slate-900">
+      <i data-lucide="house" class="h-4 w-4"></i>
+      Home
+    </a>
+    <a href="./index.html" class="inline-flex items-center gap-2 rounded-full px-3 py-2 text-sm font-semibold transition bg-sky-600 text-white shadow-lg shadow-sky-600/25">
+      <i data-lucide="git-pull-request" class="h-4 w-4"></i>
+      PR Reports
+    </a>
+    <a href="../release/index.html" class="inline-flex items-center gap-2 rounded-full px-3 py-2 text-sm font-semibold transition text-slate-600 hover:bg-slate-100 hover:text-slate-900">
+      <i data-lucide="ship-wheel" class="h-4 w-4"></i>
+      Release
+    </a>
+    <a href="../authors.html" class="inline-flex items-center gap-2 rounded-full px-3 py-2 text-sm font-semibold transition text-slate-600 hover:bg-slate-100 hover:text-slate-900">
+      <i data-lucide="users-round" class="h-4 w-4"></i>
+      Author Summary
+    </a>
+      </div>
+    </nav>
+      
+    <div class="mb-8 rounded-3xl border border-white/10 bg-white/95 p-6 shadow-2xl shadow-slate-950/20 backdrop-blur xl:p-8">
+      <div class="flex flex-col gap-6 lg:flex-row lg:items-end lg:justify-between">
+        <div>
+          <div class="mb-3 inline-flex items-center gap-2 rounded-full bg-sky-100 px-3 py-1 text-xs font-semibold text-sky-700 ring-1 ring-sky-200"><i data-lucide="layout-dashboard" class="h-4 w-4"></i>PR Reports</div>
+          <h1 class="text-3xl font-bold tracking-tight text-slate-950 sm:text-4xl">platform-api-srv PR state</h1>
+          <p class="mt-3 max-w-3xl text-sm leading-6 text-slate-600 sm:text-base">Open PR state with approvals, requested changes, the combined test/build check, age, and merge readiness.</p>
+        </div>
+        <div class="rounded-2xl border border-slate-200 bg-slate-50 px-4 py-3 text-sm text-slate-600 shadow-sm"><div class="flex items-center gap-2 font-medium text-slate-800"><i data-lucide="calendar-clock" class="h-4 w-4"></i>Generated</div><div class="mt-1">2026-04-02 19:59:54 UTC</div></div>
+      </div>
+      <div class="mt-6 grid gap-3 sm:grid-cols-2 xl:grid-cols-5">
+        <div class="rounded-2xl border border-slate-200 bg-white px-4 py-4 shadow-sm"><div class="text-xs font-semibold uppercase tracking-wide text-slate-500">Open PRs</div><div class="mt-2 text-3xl font-bold text-slate-950">13</div></div>
+        <div class="rounded-2xl border border-emerald-200 bg-emerald-50 px-4 py-4 shadow-sm"><div class="text-xs font-semibold uppercase tracking-wide text-emerald-700">Green</div><div class="mt-2 text-3xl font-bold text-emerald-900">1</div></div>
+        <div class="rounded-2xl border border-amber-200 bg-amber-50 px-4 py-4 shadow-sm"><div class="text-xs font-semibold uppercase tracking-wide text-amber-700">Amber</div><div class="mt-2 text-3xl font-bold text-amber-900">1</div></div>
+        <div class="rounded-2xl border border-rose-200 bg-rose-50 px-4 py-4 shadow-sm"><div class="text-xs font-semibold uppercase tracking-wide text-rose-700">Red</div><div class="mt-2 text-3xl font-bold text-rose-900">11</div></div>
+        <div class="rounded-2xl border border-sky-200 bg-sky-50 px-4 py-4 shadow-sm"><div class="text-xs font-semibold uppercase tracking-wide text-sky-700">Can merge</div><div class="mt-2 text-3xl font-bold text-sky-900">2</div></div>
+      </div>
+    </div>
+
+    <section class="rounded-3xl border border-white/10 bg-white/95 shadow-2xl shadow-slate-950/20 backdrop-blur">
+      <div class="border-b border-slate-200 px-6 py-5"><div class="flex items-center gap-3"><div class="rounded-xl bg-slate-900 p-2 text-white shadow-lg shadow-slate-900/20"><i data-lucide="table-properties" class="h-5 w-5"></i></div><div><h2 class="text-xl font-bold text-slate-950">Open PR overview</h2><p class="text-sm text-slate-500">Oldest first, with age driving the red/amber/green visual state.</p></div></div></div>
+      <div class="overflow-x-auto"><table class="min-w-full text-sm"><thead class="sticky top-0 z-10 bg-slate-50/95 backdrop-blur"><tr class="border-b border-slate-200 text-left text-xs font-semibold uppercase tracking-wide text-slate-500"><th class="px-4 py-3">PR</th><th class="px-4 py-3 text-center">Approvals</th><th class="px-4 py-3 text-center">Changes Requested</th><th class="px-4 py-3 text-center">Test &amp; Build</th><th class="px-4 py-3 text-center">Age</th><th class="px-4 py-3 text-center">Can Merge</th></tr></thead><tbody>
+        <tr class="border-t border-slate-200/80 bg-white/85 hover:bg-slate-50/90 transition-colors">
+          <td class="px-4 py-4 align-top">
+            <div class="flex items-start gap-3">
+              <span class="mt-1 h-8 w-1.5 rounded-full bg-rose-500"></span>
+              <div>
+                <a href="https://github.com/RoyalVoluntaryService/platform-api-srv/pull/697" class="font-semibold text-slate-900 hover:text-sky-700 hover:underline">#697 Add e2e tests for Public API</a>
+                <div class="mt-1 flex items-center gap-2 text-xs text-slate-500">
+                  <span class="inline-flex items-center gap-1"><i data-lucide="git-pull-request" class="h-3.5 w-3.5"></i>Open PR</span>
+                  <span class="inline-flex items-center gap-1"><i data-lucide="user-round" class="h-3.5 w-3.5"></i>israelalagbe</span>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="px-4 py-4 text-center"><span class="inline-flex items-center justify-center rounded-full px-2.5 py-1 text-xs font-semibold ring-1 ring-inset min-w-[2.5rem] bg-rose-100 text-rose-700 ring-rose-200"><i data-lucide="x" class="h-3.5 w-3.5"></i></span></td>
+          <td class="px-4 py-4 text-center"><span class="inline-flex items-center justify-center rounded-full px-2.5 py-1 text-xs font-semibold ring-1 ring-inset min-w-[2.5rem] bg-rose-100 text-rose-700 ring-rose-200"><i data-lucide="x" class="h-3.5 w-3.5"></i></span></td>
+          <td class="px-4 py-4 text-center"><span class="inline-flex items-center justify-center rounded-full px-2.5 py-1 text-xs font-semibold ring-1 ring-inset min-w-[2.5rem] bg-rose-100 text-rose-700 ring-rose-200"><i data-lucide="x" class="h-3.5 w-3.5"></i></span></td>
+          <td class="px-4 py-4 text-center"><span class="inline-flex items-center gap-1 rounded-full px-2.5 py-1 text-xs font-semibold ring-1 ring-inset bg-rose-100 text-rose-700 ring-rose-200"><i data-lucide="clock-3" class="h-3.5 w-3.5"></i>195d 7h</span></td>
+          <td class="px-4 py-4 text-center"><span class="inline-flex items-center justify-center rounded-full px-2.5 py-1 text-xs font-semibold ring-1 ring-inset min-w-[2.5rem] bg-rose-100 text-rose-700 ring-rose-200"><i data-lucide="x" class="h-3.5 w-3.5"></i></span></td>
+        </tr>
+        <tr class="border-t border-slate-200/80 bg-white/85 hover:bg-slate-50/90 transition-colors">
+          <td class="px-4 py-4 align-top">
+            <div class="flex items-start gap-3">
+              <span class="mt-1 h-8 w-1.5 rounded-full bg-rose-500"></span>
+              <div>
+                <a href="https://github.com/RoyalVoluntaryService/platform-api-srv/pull/1142" class="font-semibold text-slate-900 hover:text-sky-700 hover:underline">#1142 Test: Add unit tests for YotiService</a>
+                <div class="mt-1 flex items-center gap-2 text-xs text-slate-500">
+                  <span class="inline-flex items-center gap-1"><i data-lucide="git-pull-request" class="h-3.5 w-3.5"></i>Open PR</span>
+                  <span class="inline-flex items-center gap-1"><i data-lucide="user-round" class="h-3.5 w-3.5"></i>bzmp125</span>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="px-4 py-4 text-center"><span class="inline-flex items-center justify-center rounded-full px-2.5 py-1 text-xs font-semibold ring-1 ring-inset min-w-[2.5rem] bg-emerald-100 text-emerald-700 ring-emerald-200"><i data-lucide="check" class="h-3.5 w-3.5"></i></span></td>
+          <td class="px-4 py-4 text-center"><span class="inline-flex items-center justify-center rounded-full px-2.5 py-1 text-xs font-semibold ring-1 ring-inset min-w-[2.5rem] bg-rose-100 text-rose-700 ring-rose-200"><i data-lucide="x" class="h-3.5 w-3.5"></i></span></td>
+          <td class="px-4 py-4 text-center"><span class="inline-flex items-center justify-center rounded-full px-2.5 py-1 text-xs font-semibold ring-1 ring-inset min-w-[2.5rem] bg-emerald-100 text-emerald-700 ring-emerald-200"><i data-lucide="check" class="h-3.5 w-3.5"></i></span></td>
+          <td class="px-4 py-4 text-center"><span class="inline-flex items-center gap-1 rounded-full px-2.5 py-1 text-xs font-semibold ring-1 ring-inset bg-rose-100 text-rose-700 ring-rose-200"><i data-lucide="clock-3" class="h-3.5 w-3.5"></i>85d 6h</span></td>
+          <td class="px-4 py-4 text-center"><span class="inline-flex items-center justify-center rounded-full px-2.5 py-1 text-xs font-semibold ring-1 ring-inset min-w-[2.5rem] bg-emerald-100 text-emerald-700 ring-emerald-200"><i data-lucide="check" class="h-3.5 w-3.5"></i></span></td>
+        </tr>
+        <tr class="border-t border-slate-200/80 bg-white/85 hover:bg-slate-50/90 transition-colors">
+          <td class="px-4 py-4 align-top">
+            <div class="flex items-start gap-3">
+              <span class="mt-1 h-8 w-1.5 rounded-full bg-rose-500"></span>
+              <div>
+                <a href="https://github.com/RoyalVoluntaryService/platform-api-srv/pull/1198" class="font-semibold text-slate-900 hover:text-sky-700 hover:underline">#1198 fix: add meta data for search if no search results are returned [GV-1951]</a>
+                <div class="mt-1 flex items-center gap-2 text-xs text-slate-500">
+                  <span class="inline-flex items-center gap-1"><i data-lucide="git-pull-request" class="h-3.5 w-3.5"></i>Open PR</span>
+                  <span class="inline-flex items-center gap-1"><i data-lucide="user-round" class="h-3.5 w-3.5"></i>gacheruevans</span>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="px-4 py-4 text-center"><span class="inline-flex items-center justify-center rounded-full px-2.5 py-1 text-xs font-semibold ring-1 ring-inset min-w-[2.5rem] bg-rose-100 text-rose-700 ring-rose-200"><i data-lucide="x" class="h-3.5 w-3.5"></i></span></td>
+          <td class="px-4 py-4 text-center"><span class="inline-flex items-center justify-center rounded-full px-2.5 py-1 text-xs font-semibold ring-1 ring-inset min-w-[2.5rem] bg-rose-100 text-rose-700 ring-rose-200"><i data-lucide="x" class="h-3.5 w-3.5"></i></span></td>
+          <td class="px-4 py-4 text-center"><span class="inline-flex items-center justify-center rounded-full px-2.5 py-1 text-xs font-semibold ring-1 ring-inset min-w-[2.5rem] bg-rose-100 text-rose-700 ring-rose-200"><i data-lucide="x" class="h-3.5 w-3.5"></i></span></td>
+          <td class="px-4 py-4 text-center"><span class="inline-flex items-center gap-1 rounded-full px-2.5 py-1 text-xs font-semibold ring-1 ring-inset bg-rose-100 text-rose-700 ring-rose-200"><i data-lucide="clock-3" class="h-3.5 w-3.5"></i>70d 8h</span></td>
+          <td class="px-4 py-4 text-center"><span class="inline-flex items-center justify-center rounded-full px-2.5 py-1 text-xs font-semibold ring-1 ring-inset min-w-[2.5rem] bg-rose-100 text-rose-700 ring-rose-200"><i data-lucide="x" class="h-3.5 w-3.5"></i></span></td>
+        </tr>
+        <tr class="border-t border-slate-200/80 bg-white/85 hover:bg-slate-50/90 transition-colors">
+          <td class="px-4 py-4 align-top">
+            <div class="flex items-start gap-3">
+              <span class="mt-1 h-8 w-1.5 rounded-full bg-rose-500"></span>
+              <div>
+                <a href="https://github.com/RoyalVoluntaryService/platform-api-srv/pull/1216" class="font-semibold text-slate-900 hover:text-sky-700 hover:underline">#1216 feat: add `status`, `userType` and `role` filters in GET /admin/users [GV-2831]</a>
+                <div class="mt-1 flex items-center gap-2 text-xs text-slate-500">
+                  <span class="inline-flex items-center gap-1"><i data-lucide="git-pull-request" class="h-3.5 w-3.5"></i>Open PR</span>
+                  <span class="inline-flex items-center gap-1"><i data-lucide="user-round" class="h-3.5 w-3.5"></i>app/copilot-swe-agent</span>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="px-4 py-4 text-center"><span class="inline-flex items-center justify-center rounded-full px-2.5 py-1 text-xs font-semibold ring-1 ring-inset min-w-[2.5rem] bg-rose-100 text-rose-700 ring-rose-200"><i data-lucide="x" class="h-3.5 w-3.5"></i></span></td>
+          <td class="px-4 py-4 text-center"><span class="inline-flex items-center justify-center rounded-full px-2.5 py-1 text-xs font-semibold ring-1 ring-inset min-w-[2.5rem] bg-rose-100 text-rose-700 ring-rose-200"><i data-lucide="x" class="h-3.5 w-3.5"></i></span></td>
+          <td class="px-4 py-4 text-center"><span class="inline-flex items-center justify-center rounded-full px-2.5 py-1 text-xs font-semibold ring-1 ring-inset min-w-[2.5rem] bg-emerald-100 text-emerald-700 ring-emerald-200"><i data-lucide="check" class="h-3.5 w-3.5"></i></span></td>
+          <td class="px-4 py-4 text-center"><span class="inline-flex items-center gap-1 rounded-full px-2.5 py-1 text-xs font-semibold ring-1 ring-inset bg-rose-100 text-rose-700 ring-rose-200"><i data-lucide="clock-3" class="h-3.5 w-3.5"></i>64d 12h</span></td>
+          <td class="px-4 py-4 text-center"><span class="inline-flex items-center justify-center rounded-full px-2.5 py-1 text-xs font-semibold ring-1 ring-inset min-w-[2.5rem] bg-rose-100 text-rose-700 ring-rose-200"><i data-lucide="x" class="h-3.5 w-3.5"></i></span></td>
+        </tr>
+        <tr class="border-t border-slate-200/80 bg-white/85 hover:bg-slate-50/90 transition-colors">
+          <td class="px-4 py-4 align-top">
+            <div class="flex items-start gap-3">
+              <span class="mt-1 h-8 w-1.5 rounded-full bg-rose-500"></span>
+              <div>
+                <a href="https://github.com/RoyalVoluntaryService/platform-api-srv/pull/1229" class="font-semibold text-slate-900 hover:text-sky-700 hover:underline">#1229 fix: add pagination to saved opportunities end point [GV-1564]</a>
+                <div class="mt-1 flex items-center gap-2 text-xs text-slate-500">
+                  <span class="inline-flex items-center gap-1"><i data-lucide="git-pull-request" class="h-3.5 w-3.5"></i>Open PR</span>
+                  <span class="inline-flex items-center gap-1"><i data-lucide="user-round" class="h-3.5 w-3.5"></i>gacheruevans</span>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="px-4 py-4 text-center"><span class="inline-flex items-center justify-center rounded-full px-2.5 py-1 text-xs font-semibold ring-1 ring-inset min-w-[2.5rem] bg-rose-100 text-rose-700 ring-rose-200"><i data-lucide="x" class="h-3.5 w-3.5"></i></span></td>
+          <td class="px-4 py-4 text-center"><span class="inline-flex items-center justify-center rounded-full px-2.5 py-1 text-xs font-semibold ring-1 ring-inset min-w-[2.5rem] bg-rose-100 text-rose-700 ring-rose-200"><i data-lucide="x" class="h-3.5 w-3.5"></i></span></td>
+          <td class="px-4 py-4 text-center"><span class="inline-flex items-center justify-center rounded-full px-2.5 py-1 text-xs font-semibold ring-1 ring-inset min-w-[2.5rem] bg-emerald-100 text-emerald-700 ring-emerald-200"><i data-lucide="check" class="h-3.5 w-3.5"></i></span></td>
+          <td class="px-4 py-4 text-center"><span class="inline-flex items-center gap-1 rounded-full px-2.5 py-1 text-xs font-semibold ring-1 ring-inset bg-rose-100 text-rose-700 ring-rose-200"><i data-lucide="clock-3" class="h-3.5 w-3.5"></i>63d 7h</span></td>
+          <td class="px-4 py-4 text-center"><span class="inline-flex items-center justify-center rounded-full px-2.5 py-1 text-xs font-semibold ring-1 ring-inset min-w-[2.5rem] bg-rose-100 text-rose-700 ring-rose-200"><i data-lucide="x" class="h-3.5 w-3.5"></i></span></td>
+        </tr>
+        <tr class="border-t border-slate-200/80 bg-white/85 hover:bg-slate-50/90 transition-colors">
+          <td class="px-4 py-4 align-top">
+            <div class="flex items-start gap-3">
+              <span class="mt-1 h-8 w-1.5 rounded-full bg-rose-500"></span>
+              <div>
+                <a href="https://github.com/RoyalVoluntaryService/platform-api-srv/pull/1371" class="font-semibold text-slate-900 hover:text-sky-700 hover:underline">#1371 Feature/hot-reload-5-3</a>
+                <div class="mt-1 flex items-center gap-2 text-xs text-slate-500">
+                  <span class="inline-flex items-center gap-1"><i data-lucide="git-pull-request" class="h-3.5 w-3.5"></i>Open PR</span>
+                  <span class="inline-flex items-center gap-1"><i data-lucide="user-round" class="h-3.5 w-3.5"></i>paddyRVS</span>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="px-4 py-4 text-center"><span class="inline-flex items-center justify-center rounded-full px-2.5 py-1 text-xs font-semibold ring-1 ring-inset min-w-[2.5rem] bg-rose-100 text-rose-700 ring-rose-200"><i data-lucide="x" class="h-3.5 w-3.5"></i></span></td>
+          <td class="px-4 py-4 text-center"><span class="inline-flex items-center justify-center rounded-full px-2.5 py-1 text-xs font-semibold ring-1 ring-inset min-w-[2.5rem] bg-rose-100 text-rose-700 ring-rose-200"><i data-lucide="x" class="h-3.5 w-3.5"></i></span></td>
+          <td class="px-4 py-4 text-center"><span class="inline-flex items-center justify-center rounded-full px-2.5 py-1 text-xs font-semibold ring-1 ring-inset min-w-[2.5rem] bg-rose-100 text-rose-700 ring-rose-200"><i data-lucide="x" class="h-3.5 w-3.5"></i></span></td>
+          <td class="px-4 py-4 text-center"><span class="inline-flex items-center gap-1 rounded-full px-2.5 py-1 text-xs font-semibold ring-1 ring-inset bg-rose-100 text-rose-700 ring-rose-200"><i data-lucide="clock-3" class="h-3.5 w-3.5"></i>29d 6h</span></td>
+          <td class="px-4 py-4 text-center"><span class="inline-flex items-center justify-center rounded-full px-2.5 py-1 text-xs font-semibold ring-1 ring-inset min-w-[2.5rem] bg-rose-100 text-rose-700 ring-rose-200"><i data-lucide="x" class="h-3.5 w-3.5"></i></span></td>
+        </tr>
+        <tr class="border-t border-slate-200/80 bg-white/85 hover:bg-slate-50/90 transition-colors">
+          <td class="px-4 py-4 align-top">
+            <div class="flex items-start gap-3">
+              <span class="mt-1 h-8 w-1.5 rounded-full bg-rose-500"></span>
+              <div>
+                <a href="https://github.com/RoyalVoluntaryService/platform-api-srv/pull/1372" class="font-semibold text-slate-900 hover:text-sky-700 hover:underline">#1372 Feature/add-turbo-remote-cache</a>
+                <div class="mt-1 flex items-center gap-2 text-xs text-slate-500">
+                  <span class="inline-flex items-center gap-1"><i data-lucide="git-pull-request" class="h-3.5 w-3.5"></i>Open PR</span>
+                  <span class="inline-flex items-center gap-1"><i data-lucide="user-round" class="h-3.5 w-3.5"></i>paddyRVS</span>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="px-4 py-4 text-center"><span class="inline-flex items-center justify-center rounded-full px-2.5 py-1 text-xs font-semibold ring-1 ring-inset min-w-[2.5rem] bg-rose-100 text-rose-700 ring-rose-200"><i data-lucide="x" class="h-3.5 w-3.5"></i></span></td>
+          <td class="px-4 py-4 text-center"><span class="inline-flex items-center justify-center rounded-full px-2.5 py-1 text-xs font-semibold ring-1 ring-inset min-w-[2.5rem] bg-rose-100 text-rose-700 ring-rose-200"><i data-lucide="x" class="h-3.5 w-3.5"></i></span></td>
+          <td class="px-4 py-4 text-center"><span class="inline-flex items-center justify-center rounded-full px-2.5 py-1 text-xs font-semibold ring-1 ring-inset min-w-[2.5rem] bg-emerald-100 text-emerald-700 ring-emerald-200"><i data-lucide="check" class="h-3.5 w-3.5"></i></span></td>
+          <td class="px-4 py-4 text-center"><span class="inline-flex items-center gap-1 rounded-full px-2.5 py-1 text-xs font-semibold ring-1 ring-inset bg-rose-100 text-rose-700 ring-rose-200"><i data-lucide="clock-3" class="h-3.5 w-3.5"></i>29d 5h</span></td>
+          <td class="px-4 py-4 text-center"><span class="inline-flex items-center justify-center rounded-full px-2.5 py-1 text-xs font-semibold ring-1 ring-inset min-w-[2.5rem] bg-rose-100 text-rose-700 ring-rose-200"><i data-lucide="x" class="h-3.5 w-3.5"></i></span></td>
+        </tr>
+        <tr class="border-t border-slate-200/80 bg-white/85 hover:bg-slate-50/90 transition-colors">
+          <td class="px-4 py-4 align-top">
+            <div class="flex items-start gap-3">
+              <span class="mt-1 h-8 w-1.5 rounded-full bg-rose-500"></span>
+              <div>
+                <a href="https://github.com/RoyalVoluntaryService/platform-api-srv/pull/1377" class="font-semibold text-slate-900 hover:text-sky-700 hover:underline">#1377 Feature/update-docker-build-speed</a>
+                <div class="mt-1 flex items-center gap-2 text-xs text-slate-500">
+                  <span class="inline-flex items-center gap-1"><i data-lucide="git-pull-request" class="h-3.5 w-3.5"></i>Open PR</span>
+                  <span class="inline-flex items-center gap-1"><i data-lucide="user-round" class="h-3.5 w-3.5"></i>paddyRVS</span>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="px-4 py-4 text-center"><span class="inline-flex items-center justify-center rounded-full px-2.5 py-1 text-xs font-semibold ring-1 ring-inset min-w-[2.5rem] bg-rose-100 text-rose-700 ring-rose-200"><i data-lucide="x" class="h-3.5 w-3.5"></i></span></td>
+          <td class="px-4 py-4 text-center"><span class="inline-flex items-center justify-center rounded-full px-2.5 py-1 text-xs font-semibold ring-1 ring-inset min-w-[2.5rem] bg-rose-100 text-rose-700 ring-rose-200"><i data-lucide="x" class="h-3.5 w-3.5"></i></span></td>
+          <td class="px-4 py-4 text-center"><span class="inline-flex items-center justify-center rounded-full px-2.5 py-1 text-xs font-semibold ring-1 ring-inset min-w-[2.5rem] bg-slate-100 text-slate-600 ring-slate-200"><i data-lucide="circle-help" class="h-3.5 w-3.5"></i></span></td>
+          <td class="px-4 py-4 text-center"><span class="inline-flex items-center gap-1 rounded-full px-2.5 py-1 text-xs font-semibold ring-1 ring-inset bg-rose-100 text-rose-700 ring-rose-200"><i data-lucide="clock-3" class="h-3.5 w-3.5"></i>28d 10h</span></td>
+          <td class="px-4 py-4 text-center"><span class="inline-flex items-center justify-center rounded-full px-2.5 py-1 text-xs font-semibold ring-1 ring-inset min-w-[2.5rem] bg-rose-100 text-rose-700 ring-rose-200"><i data-lucide="x" class="h-3.5 w-3.5"></i></span></td>
+        </tr>
+        <tr class="border-t border-slate-200/80 bg-white/85 hover:bg-slate-50/90 transition-colors">
+          <td class="px-4 py-4 align-top">
+            <div class="flex items-start gap-3">
+              <span class="mt-1 h-8 w-1.5 rounded-full bg-rose-500"></span>
+              <div>
+                <a href="https://github.com/RoyalVoluntaryService/platform-api-srv/pull/1415" class="font-semibold text-slate-900 hover:text-sky-700 hover:underline">#1415 Added dev container config files</a>
+                <div class="mt-1 flex items-center gap-2 text-xs text-slate-500">
+                  <span class="inline-flex items-center gap-1"><i data-lucide="git-pull-request" class="h-3.5 w-3.5"></i>Open PR</span>
+                  <span class="inline-flex items-center gap-1"><i data-lucide="user-round" class="h-3.5 w-3.5"></i>Chana023</span>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="px-4 py-4 text-center"><span class="inline-flex items-center justify-center rounded-full px-2.5 py-1 text-xs font-semibold ring-1 ring-inset min-w-[2.5rem] bg-emerald-100 text-emerald-700 ring-emerald-200"><i data-lucide="check" class="h-3.5 w-3.5"></i></span></td>
+          <td class="px-4 py-4 text-center"><span class="inline-flex items-center justify-center rounded-full px-2.5 py-1 text-xs font-semibold ring-1 ring-inset min-w-[2.5rem] bg-rose-100 text-rose-700 ring-rose-200"><i data-lucide="x" class="h-3.5 w-3.5"></i></span></td>
+          <td class="px-4 py-4 text-center"><span class="inline-flex items-center justify-center rounded-full px-2.5 py-1 text-xs font-semibold ring-1 ring-inset min-w-[2.5rem] bg-emerald-100 text-emerald-700 ring-emerald-200"><i data-lucide="check" class="h-3.5 w-3.5"></i></span></td>
+          <td class="px-4 py-4 text-center"><span class="inline-flex items-center gap-1 rounded-full px-2.5 py-1 text-xs font-semibold ring-1 ring-inset bg-rose-100 text-rose-700 ring-rose-200"><i data-lucide="clock-3" class="h-3.5 w-3.5"></i>14d 6h</span></td>
+          <td class="px-4 py-4 text-center"><span class="inline-flex items-center justify-center rounded-full px-2.5 py-1 text-xs font-semibold ring-1 ring-inset min-w-[2.5rem] bg-emerald-100 text-emerald-700 ring-emerald-200"><i data-lucide="check" class="h-3.5 w-3.5"></i></span></td>
+        </tr>
+        <tr class="border-t border-slate-200/80 bg-white/85 hover:bg-slate-50/90 transition-colors">
+          <td class="px-4 py-4 align-top">
+            <div class="flex items-start gap-3">
+              <span class="mt-1 h-8 w-1.5 rounded-full bg-rose-500"></span>
+              <div>
+                <a href="https://github.com/RoyalVoluntaryService/platform-api-srv/pull/1429" class="font-semibold text-slate-900 hover:text-sky-700 hover:underline">#1429 Gv 3539  - Campaign tagging via public api update link</a>
+                <div class="mt-1 flex items-center gap-2 text-xs text-slate-500">
+                  <span class="inline-flex items-center gap-1"><i data-lucide="git-pull-request" class="h-3.5 w-3.5"></i>Open PR</span>
+                  <span class="inline-flex items-center gap-1"><i data-lucide="user-round" class="h-3.5 w-3.5"></i>a-amato3</span>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="px-4 py-4 text-center"><span class="inline-flex items-center justify-center rounded-full px-2.5 py-1 text-xs font-semibold ring-1 ring-inset min-w-[2.5rem] bg-rose-100 text-rose-700 ring-rose-200"><i data-lucide="x" class="h-3.5 w-3.5"></i></span></td>
+          <td class="px-4 py-4 text-center"><span class="inline-flex items-center justify-center rounded-full px-2.5 py-1 text-xs font-semibold ring-1 ring-inset min-w-[2.5rem] bg-rose-100 text-rose-700 ring-rose-200"><i data-lucide="x" class="h-3.5 w-3.5"></i></span></td>
+          <td class="px-4 py-4 text-center"><span class="inline-flex items-center justify-center rounded-full px-2.5 py-1 text-xs font-semibold ring-1 ring-inset min-w-[2.5rem] bg-emerald-100 text-emerald-700 ring-emerald-200"><i data-lucide="check" class="h-3.5 w-3.5"></i></span></td>
+          <td class="px-4 py-4 text-center"><span class="inline-flex items-center gap-1 rounded-full px-2.5 py-1 text-xs font-semibold ring-1 ring-inset bg-rose-100 text-rose-700 ring-rose-200"><i data-lucide="clock-3" class="h-3.5 w-3.5"></i>9d 3h</span></td>
+          <td class="px-4 py-4 text-center"><span class="inline-flex items-center justify-center rounded-full px-2.5 py-1 text-xs font-semibold ring-1 ring-inset min-w-[2.5rem] bg-rose-100 text-rose-700 ring-rose-200"><i data-lucide="x" class="h-3.5 w-3.5"></i></span></td>
+        </tr>
+        <tr class="border-t border-slate-200/80 bg-white/85 hover:bg-slate-50/90 transition-colors">
+          <td class="px-4 py-4 align-top">
+            <div class="flex items-start gap-3">
+              <span class="mt-1 h-8 w-1.5 rounded-full bg-rose-500"></span>
+              <div>
+                <a href="https://github.com/RoyalVoluntaryService/platform-api-srv/pull/1436" class="font-semibold text-slate-900 hover:text-sky-700 hover:underline">#1436 fix: add missing type definitions for various DTO properties</a>
+                <div class="mt-1 flex items-center gap-2 text-xs text-slate-500">
+                  <span class="inline-flex items-center gap-1"><i data-lucide="git-pull-request" class="h-3.5 w-3.5"></i>Open PR</span>
+                  <span class="inline-flex items-center gap-1"><i data-lucide="user-round" class="h-3.5 w-3.5"></i>bzmp125</span>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="px-4 py-4 text-center"><span class="inline-flex items-center justify-center rounded-full px-2.5 py-1 text-xs font-semibold ring-1 ring-inset min-w-[2.5rem] bg-rose-100 text-rose-700 ring-rose-200"><i data-lucide="x" class="h-3.5 w-3.5"></i></span></td>
+          <td class="px-4 py-4 text-center"><span class="inline-flex items-center justify-center rounded-full px-2.5 py-1 text-xs font-semibold ring-1 ring-inset min-w-[2.5rem] bg-rose-100 text-rose-700 ring-rose-200"><i data-lucide="x" class="h-3.5 w-3.5"></i></span></td>
+          <td class="px-4 py-4 text-center"><span class="inline-flex items-center justify-center rounded-full px-2.5 py-1 text-xs font-semibold ring-1 ring-inset min-w-[2.5rem] bg-emerald-100 text-emerald-700 ring-emerald-200"><i data-lucide="check" class="h-3.5 w-3.5"></i></span></td>
+          <td class="px-4 py-4 text-center"><span class="inline-flex items-center gap-1 rounded-full px-2.5 py-1 text-xs font-semibold ring-1 ring-inset bg-rose-100 text-rose-700 ring-rose-200"><i data-lucide="clock-3" class="h-3.5 w-3.5"></i>2d 5h</span></td>
+          <td class="px-4 py-4 text-center"><span class="inline-flex items-center justify-center rounded-full px-2.5 py-1 text-xs font-semibold ring-1 ring-inset min-w-[2.5rem] bg-rose-100 text-rose-700 ring-rose-200"><i data-lucide="x" class="h-3.5 w-3.5"></i></span></td>
+        </tr>
+        <tr class="border-t border-slate-200/80 bg-white/85 hover:bg-slate-50/90 transition-colors">
+          <td class="px-4 py-4 align-top">
+            <div class="flex items-start gap-3">
+              <span class="mt-1 h-8 w-1.5 rounded-full bg-amber-500"></span>
+              <div>
+                <a href="https://github.com/RoyalVoluntaryService/platform-api-srv/pull/1439" class="font-semibold text-slate-900 hover:text-sky-700 hover:underline">#1439 Store event for image severity threshold</a>
+                <div class="mt-1 flex items-center gap-2 text-xs text-slate-500">
+                  <span class="inline-flex items-center gap-1"><i data-lucide="git-pull-request" class="h-3.5 w-3.5"></i>Open PR</span>
+                  <span class="inline-flex items-center gap-1"><i data-lucide="user-round" class="h-3.5 w-3.5"></i>a-amato3</span>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="px-4 py-4 text-center"><span class="inline-flex items-center justify-center rounded-full px-2.5 py-1 text-xs font-semibold ring-1 ring-inset min-w-[2.5rem] bg-rose-100 text-rose-700 ring-rose-200"><i data-lucide="x" class="h-3.5 w-3.5"></i></span></td>
+          <td class="px-4 py-4 text-center"><span class="inline-flex items-center justify-center rounded-full px-2.5 py-1 text-xs font-semibold ring-1 ring-inset min-w-[2.5rem] bg-rose-100 text-rose-700 ring-rose-200"><i data-lucide="x" class="h-3.5 w-3.5"></i></span></td>
+          <td class="px-4 py-4 text-center"><span class="inline-flex items-center justify-center rounded-full px-2.5 py-1 text-xs font-semibold ring-1 ring-inset min-w-[2.5rem] bg-rose-100 text-rose-700 ring-rose-200"><i data-lucide="x" class="h-3.5 w-3.5"></i></span></td>
+          <td class="px-4 py-4 text-center"><span class="inline-flex items-center gap-1 rounded-full px-2.5 py-1 text-xs font-semibold ring-1 ring-inset bg-amber-100 text-amber-700 ring-amber-200"><i data-lucide="clock-3" class="h-3.5 w-3.5"></i>1d 5h</span></td>
+          <td class="px-4 py-4 text-center"><span class="inline-flex items-center justify-center rounded-full px-2.5 py-1 text-xs font-semibold ring-1 ring-inset min-w-[2.5rem] bg-rose-100 text-rose-700 ring-rose-200"><i data-lucide="x" class="h-3.5 w-3.5"></i></span></td>
+        </tr>
+        <tr class="border-t border-slate-200/80 bg-white/85 hover:bg-slate-50/90 transition-colors">
+          <td class="px-4 py-4 align-top">
+            <div class="flex items-start gap-3">
+              <span class="mt-1 h-8 w-1.5 rounded-full bg-emerald-500"></span>
+              <div>
+                <a href="https://github.com/RoyalVoluntaryService/platform-api-srv/pull/1443" class="font-semibold text-slate-900 hover:text-sky-700 hover:underline">#1443 fix: ensure public api still uses legacy statuses [GV-4026]</a>
+                <div class="mt-1 flex items-center gap-2 text-xs text-slate-500">
+                  <span class="inline-flex items-center gap-1"><i data-lucide="git-pull-request" class="h-3.5 w-3.5"></i>Open PR</span>
+                  <span class="inline-flex items-center gap-1"><i data-lucide="user-round" class="h-3.5 w-3.5"></i>Mumtahin</span>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="px-4 py-4 text-center"><span class="inline-flex items-center justify-center rounded-full px-2.5 py-1 text-xs font-semibold ring-1 ring-inset min-w-[2.5rem] bg-rose-100 text-rose-700 ring-rose-200"><i data-lucide="x" class="h-3.5 w-3.5"></i></span></td>
+          <td class="px-4 py-4 text-center"><span class="inline-flex items-center justify-center rounded-full px-2.5 py-1 text-xs font-semibold ring-1 ring-inset min-w-[2.5rem] bg-rose-100 text-rose-700 ring-rose-200"><i data-lucide="x" class="h-3.5 w-3.5"></i></span></td>
+          <td class="px-4 py-4 text-center"><span class="inline-flex items-center justify-center rounded-full px-2.5 py-1 text-xs font-semibold ring-1 ring-inset min-w-[2.5rem] bg-emerald-100 text-emerald-700 ring-emerald-200"><i data-lucide="check" class="h-3.5 w-3.5"></i></span></td>
+          <td class="px-4 py-4 text-center"><span class="inline-flex items-center gap-1 rounded-full px-2.5 py-1 text-xs font-semibold ring-1 ring-inset bg-emerald-100 text-emerald-700 ring-emerald-200"><i data-lucide="clock-3" class="h-3.5 w-3.5"></i>7h 25m</span></td>
+          <td class="px-4 py-4 text-center"><span class="inline-flex items-center justify-center rounded-full px-2.5 py-1 text-xs font-semibold ring-1 ring-inset min-w-[2.5rem] bg-rose-100 text-rose-700 ring-rose-200"><i data-lucide="x" class="h-3.5 w-3.5"></i></span></td>
+        </tr></tbody></table></div>
+    </section>
+
+    <section class="mt-8 grid gap-8 lg:grid-cols-[1.4fr_1fr]">
+      <div class="rounded-3xl border border-white/10 bg-white/95 p-6 shadow-2xl shadow-slate-950/20 backdrop-blur"><div class="mb-4 flex items-center gap-3"><div class="rounded-xl bg-amber-100 p-2 text-amber-700 ring-1 ring-amber-200"><i data-lucide="file-pen-line" class="h-5 w-5"></i></div><div><h2 class="text-xl font-bold text-slate-950">Draft PRs</h2><p class="text-sm text-slate-500">Drafts are excluded from the main table and listed here instead.</p></div></div><ul class="space-y-3"><li class="rounded-xl border border-slate-200 bg-white/80 px-4 py-3 shadow-sm shadow-slate-200/50"><a href="https://github.com/RoyalVoluntaryService/platform-api-srv/pull/1279" class="font-medium text-slate-900 hover:text-sky-700 hover:underline">#1279 chore: move maxParamLength to routerOptions for Fastify v5 compatibility</a><span class="ml-2 text-sm text-slate-500">— 52d 13h</span></li><li class="rounded-xl border border-slate-200 bg-white/80 px-4 py-3 shadow-sm shadow-slate-200/50"><a href="https://github.com/RoyalVoluntaryService/platform-api-srv/pull/1298" class="font-medium text-slate-900 hover:text-sky-700 hover:underline">#1298 Make /docs-json endpoint dynamic with caching for late-starting microservices</a><span class="ml-2 text-sm text-slate-500">— 48d 10h</span></li><li class="rounded-xl border border-slate-200 bg-white/80 px-4 py-3 shadow-sm shadow-slate-200/50"><a href="https://github.com/RoyalVoluntaryService/platform-api-srv/pull/1402" class="font-medium text-slate-900 hover:text-sky-700 hover:underline">#1402 feat: add hoursRequired and County to search DTO [GV-1346]</a><span class="ml-2 text-sm text-slate-500">— 21d 3h</span></li><li class="rounded-xl border border-slate-200 bg-white/80 px-4 py-3 shadow-sm shadow-slate-200/50"><a href="https://github.com/RoyalVoluntaryService/platform-api-srv/pull/1428" class="font-medium text-slate-900 hover:text-sky-700 hover:underline">#1428 refactor: replace RecordState with OpportunityState across the codebase</a><span class="ml-2 text-sm text-slate-500">— 9d 4h</span></li><li class="rounded-xl border border-slate-200 bg-white/80 px-4 py-3 shadow-sm shadow-slate-200/50"><a href="https://github.com/RoyalVoluntaryService/platform-api-srv/pull/1432" class="font-medium text-slate-900 hover:text-sky-700 hover:underline">#1432 Gv 3538 campaign tagging via public api add link</a><span class="ml-2 text-sm text-slate-500">— 8d 5h</span></li><li class="rounded-xl border border-slate-200 bg-white/80 px-4 py-3 shadow-sm shadow-slate-200/50"><a href="https://github.com/RoyalVoluntaryService/platform-api-srv/pull/1441" class="font-medium text-slate-900 hover:text-sky-700 hover:underline">#1441 feat: implement lifecycle state logic [GV-3701]</a><span class="ml-2 text-sm text-slate-500">— 11h 19m</span></li><li class="rounded-xl border border-slate-200 bg-white/80 px-4 py-3 shadow-sm shadow-slate-200/50"><a href="https://github.com/RoyalVoluntaryService/platform-api-srv/pull/1444" class="font-medium text-slate-900 hover:text-sky-700 hover:underline">#1444 feat(vio-onboarding): setup vio organisation onboarding</a><span class="ml-2 text-sm text-slate-500">— 7h 7m</span></li></ul></div>
+      <div class="rounded-3xl border border-white/10 bg-white/95 p-6 shadow-2xl shadow-slate-950/20 backdrop-blur"><div class="mb-4 flex items-center gap-3"><div class="rounded-xl bg-sky-100 p-2 text-sky-700 ring-1 ring-sky-200"><i data-lucide="badge-info" class="h-5 w-5"></i></div><div><h2 class="text-xl font-bold text-slate-950">Rules</h2><p class="text-sm text-slate-500">Per-repo config, rendered the same way every time.</p></div></div><ul class="space-y-3 text-sm leading-6 text-slate-600"><li class="flex gap-3"><i data-lucide="traffic-cone" class="mt-1 h-4 w-4 shrink-0 text-slate-400"></i><span>Age colour is based only on PR age: <span class="font-semibold text-emerald-700">green</span> &lt; 1 day, <span class="font-semibold text-amber-700">amber</span> 1–2 days, <span class="font-semibold text-rose-700">red</span> &gt; 2 days.</span></li><li class="flex gap-3"><i data-lucide="shield-check" class="mt-1 h-4 w-4 shrink-0 text-slate-400"></i><span>Approvals count only current human approvals. This repo requires <span class="font-semibold text-slate-800">1</span> human approval to merge.</span></li><li class="flex gap-3"><i data-lucide="message-square-warning" class="mt-1 h-4 w-4 shrink-0 text-slate-400"></i><span>Changes Requested shows human reviewers whose latest review state is changes requested.</span></li><li class="flex gap-3"><i data-lucide="flask-conical" class="mt-1 h-4 w-4 shrink-0 text-slate-400"></i><span>Test &amp; Build uses check name: <code class="rounded bg-slate-100 px-1.5 py-0.5 text-xs text-slate-800">test-and-build-check</code></span></li><li class="flex gap-3"><i data-lucide="badge-check" class="mt-1 h-4 w-4 shrink-0 text-slate-400"></i><span>Can Merge requires the configured approvals, no active changes requested, and all configured checks passing.</span></li></ul></div>
+    </section>
+    </main>
+    <script>lucide.createIcons();</script>
+  </body>
+</html>
